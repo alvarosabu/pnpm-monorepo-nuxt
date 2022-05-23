@@ -11,7 +11,9 @@
     "pnpm": ">=6"
   },
   "scripts": {
-    "build": "pnpm run build --filter @pnpm-monorepo-nuxt/ui && pnpm run build --filter @pnpm-monorepo-nuxt/blog",
+    "build:ci": "pnpm run build:ui && pnpm run build:blog",
+    "build:ui": "pnpm run build --filter @pnpm-monorepo-nuxt/ui",
+    "build:blog": "pnpm run build --filter @pnpm-monorepo-nuxt/blog",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
