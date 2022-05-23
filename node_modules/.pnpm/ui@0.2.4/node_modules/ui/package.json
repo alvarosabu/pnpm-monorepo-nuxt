@@ -1,0 +1,14 @@
+{
+  "author": "Marcus Westin <narcvs@gmail.com> (http://marcuswest.in/)",
+  "name": "ui",
+  "description": "platform agnostic ui models",
+  "version": "0.2.4",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/marcuswestin/ui.js.git"
+  },
+  "dependencies": {
+	"std": "0.1.x"
+  },
+  "devDependencies": {}
+}

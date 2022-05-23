@@ -1,0 +1,33 @@
+{
+  "name": "@pnpm-monorepo-nuxt/ui",
+  "private": true,
+  "version": "0.0.0",
+  "main": "./dist/ui.umd.js",
+  "module": "./dist/ui.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/ui.es.js",
+      "require": "./dist/ui.umd.js"
+    },
+    "./styles": "./dist/style.css",
+    "./theme": "./styles/theme.css",
+    "./": "./dist/ui.es.js"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.3",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9",
+    "vue-tsc": "^0.34.7",
+    "pathe": "^0.3.0",
+    "vite-plugin-dts": "^1.1.1"
+  }
+}

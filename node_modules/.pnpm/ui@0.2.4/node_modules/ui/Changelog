@@ -1,0 +1,23 @@
+v0.2.4
++ Fix for NODEs#on callback execution context
+
+v0.2.3
++ style.opacity improvement
+
+v0.2.0
++ Add dom.exposeGlobals()
++ Add a bunch more tags - P, H1-H4
++ implement addClass and removeClass
++ implement dom.waitForImage
++ implement Component#remove
++ create NODE class generators, such that you can define your own NODEs, e.g. BUTTON = NODES.createGenerator('button')
++ make attribute handling extensible, such that you can define your own attribute handlers, e.g. DIV({ data:dataObject })
++ implement style.gradient
++ implement dom.clipImage
++ implement dom.getViewportSize
++ implement dom.getWindowOf
++ Add getWidth, getHeight, hide and show to dom.Component
++ allow for opacity and graient to be passed in as a style property to NODEs
+
+v0.1.0
++ implement ui.dom
