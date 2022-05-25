@@ -11,7 +11,6 @@
     "nuxt": "3.0.0-rc.3"
   },
   "dependencies": {
-    "@pnpm-monorepo-nuxt/ui": "workspace:^0.0.0",
-    "ui": "^0.2.4"
+    "@pnpm-monorepo-nuxt/ui": "workspace:^0.0.0"
   }
 }
