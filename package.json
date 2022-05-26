@@ -13,7 +13,7 @@
   "scripts": {
     "build:ci": "pnpm run build:ui && pnpm run build:blog",
     "build:ui": "pnpm --filter @pnpm-monorepo-nuxt/ui build",
-    "build:blog": "pnpm i -F ./packages/blog --virtual-store-dir packages/blog/node_modules/.pnpm && pnpm --filter @pnpm-monorepo-nuxt/blog generate",
+    "build:blog": "pnpm --filter @pnpm-monorepo-nuxt/blog generate",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
