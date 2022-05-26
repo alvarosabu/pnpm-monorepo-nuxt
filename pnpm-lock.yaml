@@ -13,12 +13,9 @@ importers:
       '@pnpm-monorepo-nuxt/ui': workspace:^0.0.0
       nuxt: 3.0.0-rc.3
     dependencies:
-      '@pnpm-monorepo-nuxt/ui': file:packages/ui
+      '@pnpm-monorepo-nuxt/ui': link:../ui
     devDependencies:
       nuxt: 3.0.0-rc.3
-    dependenciesMeta:
-      '@pnpm-monorepo-nuxt/ui':
-        injected: true
 
   packages/ui:
     specifiers:
@@ -5122,11 +5119,3 @@ packages:
       compress-commons: 4.1.1
       readable-stream: 3.6.0
     dev: true
-
-  file:packages/ui:
-    resolution: {directory: packages/ui, type: directory}
-    name: '@pnpm-monorepo-nuxt/ui'
-    version: 0.0.0
-    dependencies:
-      vue: 3.2.36
-    dev: false
