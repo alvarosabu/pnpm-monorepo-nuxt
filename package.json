@@ -12,8 +12,8 @@
   },
   "scripts": {
     "build:ci": "pnpm run build:ui && pnpm run build:blog",
-    "build:ui": "pnpm --filter @pnpm-monorepo-nuxt/ui build",
-    "build:blog": "pnpm --filter @pnpm-monorepo-nuxt/blog generate",
+    "build:ui": "pnpm --dir packages/ui build",
+    "build:blog": "pnpm --dir packages/blog generate",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
