@@ -2,7 +2,7 @@
   NODE_VERSION = "16"
   NPM_FLAGS = "--version" # prevent Netlify npm install
 [build]
-  base = "packages/blog/"
+  base = "apps/blog/"
   command = "npx pnpm@v6 i --store=node_modules/.pnpm-store --frozen-lockfile && npx pnpm@v6 run generate:ci"
 [[redirects]]
   from = "/*"
