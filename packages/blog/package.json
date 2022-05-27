@@ -5,6 +5,7 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
+    "generate:ci": "pnpm run -w build:ui && nuxt generate",
     "preview": "nuxt preview"
   },
   "devDependencies": {
