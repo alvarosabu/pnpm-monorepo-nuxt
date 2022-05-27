@@ -4,6 +4,7 @@
   "description": "Reproduction repo",
   "main": "index.js",
   "workspaces": [
+    "apps/**",
     "packages/*"
   ],
   "engines": {
