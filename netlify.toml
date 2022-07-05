@@ -3,8 +3,8 @@
   NPM_FLAGS = "--version" # prevent Netlify npm install
 [build]
   base = "apps/blog/"
-  publish = "./dist"
-  command = "npx pnpm@v6 i --store=node_modules/.pnpm-store --frozen-lockfile && npx pnpm@v6 run generate:ci"
+  publish = ".output/public"
+  command = "npx pnpm i --store=node_modules/.pnpm-store --frozen-lockfile && npx pnpm run generate"
 [[redirects]]
   from = "/*"
   to = "index.html"
