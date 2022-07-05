@@ -4,7 +4,7 @@
 [build]
   base = "apps/blog/"
   publish = ".output/public"
-  command = "npx pnpm i --store=node_modules/.pnpm-store --frozen-lockfile && npx pnpm run generate"
+  command = "npx pnpm i --store=node_modules/.pnpm-store --frozen-lockfile && npx pnpm run generate:ci"
 [[redirects]]
   from = "/*"
   to = "index.html"
